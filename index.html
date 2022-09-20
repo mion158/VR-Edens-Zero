@@ -4,18 +4,13 @@
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
   </head>
   <body>
+    <!-- Inspired by Sakura Cosmo in Edens Zero -->
+    <!-- Asset management system -->
     <a-scene>
-      <!-- Sakura Cosmo inspired by Edens Zero -->
-      <!-- Asset management system -->
       <a-assets>
-        <img
-          id="space"
-          src="jeremy-thomas-4dpAqfTbvKA-unsplash.jpg"
-        />
-        <img
-          id="sun"
-          src="huzeyfe-turan-Szqd4nIxDik-unsplash.jpg"
-        />
+        <img id="space" src="https://cdn.glitch.global/8d0a6e33-e234-426d-ba89-6da26e9114a2/wp6079071-pink-aesthetic-ps3-wallpapers.jpg?v=1663710853299" />
+        <img id="sun" src="https://cdn.glitch.global/8d0a6e33-e234-426d-ba89-6da26e9114a2/jeremy-thomas-4dpAqfTbvKA-unsplash.jpg?v=1663616678761" />
+        <img id="sun-ring" src="https://cdn.glitch.global/8d0a6e33-e234-426d-ba89-6da26e9114a2/jeremy-thomas-4dpAqfTbvKA-unsplash.jpg?v=1663616678761" />
         <audio id="air" src="noise.wav"></audio>
       </a-assets>
 
@@ -23,10 +18,10 @@
       <a-sky src="#space"></a-sky>
 
       <a-entity id="sun-container" position="-13 2 -10">
-        <a-sphere id="sun-jewelry" radius="4" src="#sun"></a-sphere>
+        <a-sphere id="sun-jewel" radius="4" src="#sun" ></a-sphere>
         <a-torus
           id="sun-ring1"
-          color="#FFFFFF"
+          src = "https://cdn.glitch.global/8d0a6e33-e234-426d-ba89-6da26e9114a2/huzeyfe-turan-Szqd4nIxDik-unsplash.jpg?v=1663616679993"
           segments-tubular="50"
           radius="8"
           radius-tubular="0.5"
@@ -35,7 +30,7 @@
         ></a-torus>
         <a-torus
           id="sun-ring2"
-          color="#FFFFFF"
+          src="https://cdn.glitch.global/8d0a6e33-e234-426d-ba89-6da26e9114a2/2931690.jpg?v=1663711371879"
           segments-tubular="50"
           radius="6"
           radius-tubular="0.05"
@@ -45,32 +40,39 @@
       </a-entity>
 
       <!-- Granbell -->
-      <a-sphere color="#7AFAAA" position="-3 2 -10" radius=".5"></a-sphere>
+      <a-sphere src="https://cdn.glitch.global/8d0a6e33-e234-426d-ba89-6da26e9114a2/3187966.jpg?v=1663711730423" 
+                position="-3 2 -10" 
+                radius=".5"></a-sphere>
 
       <!-- Blue Garden -->
-      <a-sphere color="#8FD4F9" position="0.005 2 -10" radius=".5"></a-sphere>
+      <a-sphere src="https://cdn.glitch.global/8d0a6e33-e234-426d-ba89-6da26e9114a2/WallpaperDog-993986.jpg?v=1663711934773" 
+                position="0.005 2 -10" 
+                rotation="-20 -50 20"
+                radius=".5"></a-sphere>
       <!-- Norma -->
       <a-entity id="norma-container" position="4 2 -10">
         <a-sphere
           position="0 0 0 "
           radius=".8"
-          color="#C4A05D"
+          src="https://cdn.glitch.global/8d0a6e33-e234-426d-ba89-6da26e9114a2/wp10060076-yellow-space-wallpapers.jpg?v=1663712409232"
           id="norma"
         ></a-sphere>
         <a-torus
           id="norma-ring-1"
-          color="#57524A"
+          color="#8B8000"
           segments-tubular="50"
           radius="3.2"
           radius-tubular="0.1"
+          opacity="0.5"
           rotation="90 0 0"
           scale=".44 .44 0.04"
         ></a-torus>
         <a-torus
           id="norma-ring-2"
-          color="#A29A87"
+          color="#8B8000"
           segments-tubular="50"
           radius="2.4"
+          opacity="0.5"
           radius-tubular="0.2"
           rotation="10 0 0"
           scale=".44 .44 0.04"
