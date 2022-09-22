@@ -11,14 +11,15 @@
         <img id="space" src="https://cdn.glitch.global/8d0a6e33-e234-426d-ba89-6da26e9114a2/wp6079071-pink-aesthetic-ps3-wallpapers.jpg?v=1663710853299" />
         <img id="sun" src="https://cdn.glitch.global/8d0a6e33-e234-426d-ba89-6da26e9114a2/jeremy-thomas-4dpAqfTbvKA-unsplash.jpg?v=1663616678761" />
         <img id="sun-ring" src="https://cdn.glitch.global/8d0a6e33-e234-426d-ba89-6da26e9114a2/jeremy-thomas-4dpAqfTbvKA-unsplash.jpg?v=1663616678761" />
-        <audio id="air" src="noise.wav"></audio>
+        <audio id="air" src="https://cdn.glitch.global/8d0a6e33-e234-426d-ba89-6da26e9114a2/andrew-kn-at-the-edge-of-space-ii-17019.mp3?v=1663881676495"></audio>
       </a-assets>
 
       <!--  Sun Jewel -->
       <a-sky src="#space"></a-sky>
 
       <a-entity id="sun-container" position="-13 2 -10">
-        <a-sphere id="sun-jewel" radius="4" src="#sun" ></a-sphere>
+        <a-sphere id="sun-jewel" radius="4" src="#sun"
+                  animation="property: object3D.position.y; to: 3; dir: alternate; dur: 5000; loop: true"></a-sphere>
         <a-torus
           id="sun-ring1"
           src = "https://cdn.glitch.global/8d0a6e33-e234-426d-ba89-6da26e9114a2/huzeyfe-turan-Szqd4nIxDik-unsplash.jpg?v=1663616679993"
@@ -27,6 +28,7 @@
           radius-tubular="0.5"
           rotation="-10 10 0"
           scale=".75 .75 0.075"
+          animation="property: object3D.position.y; to: 3; dir: alternate; dur: 5000; loop: true"
         ></a-torus>
         <a-torus
           id="sun-ring2"
@@ -36,19 +38,23 @@
           radius-tubular="0.05"
           rotation="-10 10 0"
           scale=".75 .75 0.075"
+          animation="property: object3D.position.y; to: 3; dir: alternate; dur: 5000; loop: true"
         ></a-torus>
       </a-entity>
 
       <!-- Granbell -->
       <a-sphere src="https://cdn.glitch.global/8d0a6e33-e234-426d-ba89-6da26e9114a2/3187966.jpg?v=1663711730423" 
                 position="-3 2 -10" 
-                radius=".5"></a-sphere>
+                radius=".5"
+                animation="property: object3D.position.x; to: -2.9; dir: alternate; dur: 2000; loop: true"></a-sphere>
 
       <!-- Blue Garden -->
       <a-sphere src="https://cdn.glitch.global/8d0a6e33-e234-426d-ba89-6da26e9114a2/WallpaperDog-993986.jpg?v=1663711934773" 
                 position="0.005 2 -10" 
                 rotation="-20 -50 20"
-                radius=".5"></a-sphere>
+                radius=".5"
+                animation="property: object3D.position.x; to: 0.5; dir: alternate; dur: 3000; loop: true"></a-sphere>
+
       <!-- Norma -->
       <a-entity id="norma-container" position="4 2 -10">
         <a-sphere
@@ -56,6 +62,7 @@
           radius=".8"
           src="https://cdn.glitch.global/8d0a6e33-e234-426d-ba89-6da26e9114a2/wp10060076-yellow-space-wallpapers.jpg?v=1663712409232"
           id="norma"
+          animation="property: object3D.position.y; to: 0.5; dir: alternate; dur: 2000; loop: true"
         ></a-sphere>
         <a-torus
           id="norma-ring-1"
@@ -66,6 +73,7 @@
           opacity="0.5"
           rotation="90 0 0"
           scale=".44 .44 0.04"
+          animation="property: object3D.position.y; to: 0.5; dir: alternate; dur: 2000; loop: true"
         ></a-torus>
         <a-torus
           id="norma-ring-2"
@@ -76,6 +84,7 @@
           radius-tubular="0.2"
           rotation="10 0 0"
           scale=".44 .44 0.04"
+          animation="property: object3D.position.y; to: 0.5; dir: alternate; dur: 2000; loop: true"
         ></a-torus>
         <a-sound src="#air" autoplay="true"></a-sound>
       </a-entity>
