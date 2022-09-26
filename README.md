@@ -11,6 +11,6 @@ Click and drag on desktop. Open it on a smartphone and use the device motion sen
 Inspired by Sakura Cosmo in Edens Zero
 
 
-view here: [sakura-cosmo.glitch.me/](sakura-cosmo.glitch.me/)
+view here: sakura-cosmo.glitch.me/
 
-remix here: [glitch.com/edit/#!/sakura-cosmo](glitch.com/edit/#!/sakura-cosmo)
+remix here: glitch.com/edit/#!/sakura-cosmo
